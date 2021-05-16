@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitter Sentiment Analysis</title>
+
+
+    </head>
+
+    <body>
+        <h1>Twitter Sentiment Analysis</h1>
+        <h3>Identification of Racist/Sexist tweets</h3>
+
+        <form action="{{url_for('Identify')}}" method="POST">
+            <input type="text" name="tweet" placeholder="Tweet something, What's happening?" size="160" required="required"/>
+
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+
+        </form>
+        <br>
+        <br>
+        {{identify_text}}
+
+
+
+
+
+    </body>
+
+
+
+</html>
